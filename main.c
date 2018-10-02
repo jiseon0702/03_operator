@@ -5,15 +5,15 @@
 
 int main(int argc, char *argv[]) {
 	
-	int year;
-	int result;
+	int x,y,z,a;
 	
-	printf("input the year  :  ");
-	scanf("%i",&year);
+	printf("input the second : ");
+	scanf("%i",&x);
 	
-	result = (year%4 == 0 && year % 100 != 0)|| (year%400 == 0);
-	
-	printf("is the year %i the leap year? : %i",year,result);
+	y=x/3600;
+	z=(x-3600*y)/60;
+	a=(x-3600*y)%60;
+	printf("The time for %i second is %i : %i : %i ",x,y,z,a);
 	
 
 	
