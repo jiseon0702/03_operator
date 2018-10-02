@@ -5,15 +5,14 @@
 
 int main(int argc, char *argv[]) {
 	
-	int x,y,z,a;
+	int x,y,z;
 	
-	printf("input the second : ");
-	scanf("%i",&x);
+	printf("input three numbers :  ");
+	scanf("%i%i%i",&x,&y,&z);
 	
-	y=x/3600;
-	z=(x-3600*y)/60;
-	a=(x-3600*y)%60;
-	printf("The time for %i second is %i : %i : %i ",x,y,z,a);
+	
+	printf("The mean of %i,%i,%i is : %f", x,y,z,(double)(x+y+z)/3);
+		
 	
 
 	
